@@ -1,13 +1,15 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 @import url('https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
+/* ---------------------------------------------------------------- -- */
+/* CSS START ------------------------------------------------------ -- */
 
 :root 
 {
+    --colorVeAGreen: #00843D;
     --colorInfo: #009FC5; /* ... */
     --colorTask: #262626;
     --colorSummary: green;
@@ -43,22 +45,18 @@
     margin: auto;   
 }
 
- /* STR---------------------------------------------------------------------------
-  * ------------------------------------------------------------------------------
-  * HEADINGS
-  */
+/* ---------------------------------------------------------------- -- */
+/* START: HEADINGS ------------------------------------------------ -- */
 .my_Heading
 {
     /* to remove space above and below */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    /* ------------------------------ */
+
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-
-    /* font-family: ; */
 }
 
 h1.myHeading
@@ -76,7 +74,7 @@ h2.myHeading
     margin-bottom: .5rem;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
-    color: var(--colorInfo);
+    color: var(--colorVeAGreen);
 }
 
     h2.myHeading-introduction
@@ -84,20 +82,14 @@ h2.myHeading
         /* margin-top: 5rem; */
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
-        color: var(--colorInfo);
+        color: var(--colorVeAGreen);
     }
     h2.myHeading-summary
     {
         margin-top: 5rem;
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
-        color: var(--colorInfo);
-    }
-    h2.myHeading:before
-    {
-        padding-right: var(--iconPaddingLeft);
-        font-family: var(--iconFontFamily);
-        content: "\f07c";
+        color: var(--colorVeAGreen);
     }
 
 h3.myHeading
@@ -125,6 +117,9 @@ h6.my_Heading
 {
 
 }
+/* END: HEADINGS ------------------------------------------------- -- */
+/* ---------------------------------------------------------------- -- */
+
  /* END ----------------------------------------------------------------------- */
 
 
@@ -227,8 +222,8 @@ h6.my_Heading
         content: "\f013";
     }
 
-    .myCallout-summary{border-left-color: var(--colorSummary);}
-    .myCallout-summary p{color: var(--colorSummary);}
+    .myCallout-summary{border-left-color: var(--colorVeAGreen);}
+    .myCallout-summary p{color: var(--colorVeAGreen);}
     .myCallout-summary p::before
     {
         padding-right: var(--iconPaddingLeft);
@@ -585,8 +580,9 @@ h6.my_Heading
 .myMenu-col-02 
 { 
     width: 33%;     
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
 }
 .myMenu-col-03 { width: 32%;}
 .myMenu-col-04 { width: 15%;}
