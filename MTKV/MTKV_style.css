@@ -582,7 +582,6 @@ h6.my_Heading
     width: 33%;     
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
 }
 .myMenu-col-03 { width: 32%;}
 .myMenu-col-04 { width: 15%;}
@@ -641,12 +640,14 @@ h6.my_Heading
 
 .breadcrumb-item a
 {
-    color: #FFC71F !important;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
-.breadcrumb-item active
+.breadcrumb-item a:hover
 {
-    color: #FFFFFF;
+    color: #FFC71F;
     text-decoration: none;
-};
+}
+
+.breadcrumb { padding-top: 8px;}
