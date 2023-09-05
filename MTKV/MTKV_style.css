@@ -741,3 +741,8 @@ th
 {
     background-color: var(--colorVeAGreen);
 }
+
+.myList
+{
+    list-style: outside none none !important;  
+}
