@@ -1,0 +1,344 @@
+:root 
+{
+    --colorVeAGreen: #00843D;
+    --colorInfo: #009FC5; /* ... */
+    --colorTask: #262626;
+    --colorSummary: green;
+    --colorArticleTitle: #262626;
+
+    --calloutBorder: 1rem;
+    --iconPaddingLeft: 10px;
+    --iconFontFamily: "Font Awesome 5 Free";
+
+    --marginTextBlock: 1rem;    /* up and bottom */
+    --marginCallout: 1rem;      /* up and bottom */
+}
+
+.myLongRead
+{
+    margin: auto;
+    width: 600px;
+}
+
+/* ---------------------------------------------------------------- -- */
+/* START: HEADINGS ------------------------------------------------ -- */
+h1.myHeading
+{
+    margin-top: 6rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: var(--colorArticleTitle);
+}
+
+h2.myHeading
+{
+    margin-top: 5rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--colorVeAGreen);
+}
+
+    h2.myHeading-introduction
+    {
+        /* margin-top: 5rem; */
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorVeAGreen);
+    }
+    h2.myHeading-summary
+    {
+        margin-top: 5rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: var(--colorVeAGreen);
+    }
+
+h3.myHeading
+{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+h4.myHeading
+{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+h5.myHeading
+{
+
+}
+
+h6.myHeading
+{
+
+}
+/* END: HEADINGS ------------------------------------------------- -- */
+
+
+ /* STR---------------------------------------------------------------------------
+  * TEXT BLOCK - PARAGRAPH
+  */
+.myTextBlock
+{
+    /* to remove space above and below */
+    margin-top: 0px;
+    margin-bottom: var(--marginTextBlock);
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+ 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.0rem;
+    text-align: justify; 
+}
+ /* END ----------------------------------------------------------------------- */
+
+ p.myParagraph
+ {
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------ */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    
+    color: red;
+ }
+
+/* ----------------------------------------------------------
+ * CALLOUTS
+ */
+.myCallout {
+    /* to remove space above and below */
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    /* ------------------------------- */
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+
+    border: 1px solid #E2E2E2;
+    border-left-width: var(--calloutBorder);
+    border-radius: 15px;
+
+    background-color: #F2F2F2;
+    text-align: justify;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+    .myCallout p
+    {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 1.2rem !important;
+        font-weight: 600;
+        /* padding-bottom: 0rem; */
+    }
+
+    .myCallout-info {border-left-color: var(--colorInfo);}
+    .myCallout-info p {color: var(--colorInfo);}
+    .myCallout-info p::before
+    {   
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f0eb";
+    }
+
+    .myCallout-task{border-left-color: var(--colorTask);}
+    .myCallout-task p {color: var(--colorTask);}
+    .myCallout-task p::before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f013";
+    }
+
+    .myCallout-summary{border-left-color: var(--colorVeAGreen);}
+    .myCallout-summary p{color: var(--colorVeAGreen);}
+    .myCallout-summary p::before
+    {
+        padding-right: var(--iconPaddingLeft);
+        font-family: var(--iconFontFamily);
+        content: "\f14a";
+    }
+
+    .myCallout p:last-child {margin-bottom: 0rem;}
+    .myCallout code {
+    border-radius: .25rem;
+    background-color: #E2E2E2;
+    }
+    .myCallout + .myCallout {margin-top: 1rem}
+    
+/* ------------------------------------------------------------------------------
+ * ------------------------------------------------------------------------------
+ */
+
+
+.myHorizontalLine
+{
+    margin-top: 3rem;
+    background-color: #FFFFFF;
+    border-top: 1px dashed;
+    padding: 3px 3px 3px 3px;
+
+    /*     
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; 
+    */
+}
+
+/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----  
+ * Image Formating 
+ */
+.myImg
+{
+    margin-left: auto;
+    margin-right: auto;
+    /* display: block; */
+    width: 100%;
+
+    border-radius: 15px !important;
+    border: 1px solid #E2E2E2 !important;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* .myImg:hover
+{
+    opacity: 0.7;
+    border-radius: 15px;
+} */
+
+.myImgContainer
+{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+
+    width: 100%;
+}
+
+.myVideoContainer
+{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.myResponsiveIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.myImgDescription
+{
+    text-align: center; 
+    font-size: 0.9em; 
+    color:#A2A2A2;
+}
+
+.myImgDescriptionFeature
+{
+    text-align: left; 
+    font-size: 0.9em; 
+    color:#A2A2A2;
+}
+
+.myImgFullSizeLink
+{
+    text-decoration:none;
+    font-size: 0.9rem;
+}
+
+.myAlert
+{
+    /* to remove space above and below */
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    /* ------------------------------- */
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+
+    border: 1px solid #fefefe;
+}
+
+.myCode
+{
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    /* ------------------------------- */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    border-radius: 15px; */
+} 
+
+.myCite
+{
+    font-size: 0.9em; 
+    color:#A2A2A2;
+    list-style: outside none none !important;
+    
+}
+
+.myTextBlock b
+{
+    font-size: 0.9rem;
+    color: var(--colorVeAGreen);
+}
+
+.myTable li
+{
+    list-style: outside none none !important;
+}
+
+.myTableHeader
+{
+    background-color: var(--colorVeAGreen);
+}
+
+.myList
+{
+    list-style: outside none none !important;  
+}
+
+.myLink
+{
+    text-decoration: none;
+}
