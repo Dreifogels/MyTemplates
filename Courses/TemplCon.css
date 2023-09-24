@@ -373,7 +373,8 @@ h6.my_Heading
     padding-left: 0px;
 
     border-radius: 15px; 
-    overflow-x: scroll;
+    overflow-x: auto;
+    display: inline;
 
 } 
 
