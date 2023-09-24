@@ -3,14 +3,10 @@
     margin: auto;
     width: 600px;
 }
-
-/* ---------------------------------------------------------------- -- */
-/* START: HEADINGS ------------------------------------------------ -- */
 h1.myHeading
 {
     margin-top: 6rem;
     margin-bottom: .5rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     color: #262626;
 }
@@ -19,22 +15,18 @@ h2.myHeading
 {
     margin-top: 5rem;
     margin-bottom: .5rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
-    color: var(--colorVeAGreen);
+    color: #00843D;
 }
 
     h2.myHeading-introduction
     {
-        /* margin-top: 5rem; */
-        font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: #00843D;
     }
     h2.myHeading-summary
     {
         margin-top: 5rem;
-        font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: #00843D;
     }
@@ -43,7 +35,6 @@ h3.myHeading
 {
     margin-top: 3rem;
     margin-bottom: .5rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
 }
 
@@ -51,51 +42,31 @@ h4.myHeading
 {
     margin-top: 3rem;
     margin-bottom: .5rem;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
 }
 
-h5.myHeading
-{
-
-}
-
-h6.myHeading
-{
-
-}
-/* END: HEADINGS ------------------------------------------------- -- */
-
-
- /* STR---------------------------------------------------------------------------
-  * TEXT BLOCK - PARAGRAPH
-  */
 .myTextBlock
 {
-    /* to remove space above and below */
     margin-top: 0px;
-    margin-bottom: var(--marginTextBlock);
-    /* ------------------------------ */
+    margin-bottom: 1rem;
+
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
 
  
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.0rem;
     text-align: justify; 
 }
- /* END ----------------------------------------------------------------------- */
 
  p.myParagraph
  {
-    /* to remove space above and below */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    /* ------------------------------ */
+
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -103,77 +74,7 @@ h6.myHeading
     
     color: red;
  }
-
-/* ----------------------------------------------------------
- * CALLOUTS
- */
-.myCallout {
-    /* to remove space above and below */
-    margin-top: 0px;
-    margin-bottom: 1rem;
-    /* ------------------------------- */
-    padding-top: 2%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-
-    border: 1px solid #E2E2E2;
-    border-left-width: var(--calloutBorder);
-    border-radius: 15px;
-
-    background-color: #F2F2F2;
-    text-align: justify;
     
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-    .myCallout p
-    {
-        font-family: 'Roboto', sans-serif !important;
-        font-size: 1.2rem !important;
-        font-weight: 600;
-        /* padding-bottom: 0rem; */
-    }
-
-    .myCallout-info {border-left-color: var(--colorInfo);}
-    .myCallout-info p {color: var(--colorInfo);}
-    .myCallout-info p::before
-    {   
-        padding-right: var(--iconPaddingLeft);
-        font-family: var(--iconFontFamily);
-        content: "\f0eb";
-    }
-
-    .myCallout-task{border-left-color: var(--colorTask);}
-    .myCallout-task p {color: var(--colorTask);}
-    .myCallout-task p::before
-    {
-        padding-right: var(--iconPaddingLeft);
-        font-family: var(--iconFontFamily);
-        content: "\f013";
-    }
-
-    .myCallout-summary{border-left-color: var(--colorVeAGreen);}
-    .myCallout-summary p{color: var(--colorVeAGreen);}
-    .myCallout-summary p::before
-    {
-        padding-right: var(--iconPaddingLeft);
-        font-family: var(--iconFontFamily);
-        content: "\f14a";
-    }
-
-    .myCallout p:last-child {margin-bottom: 0rem;}
-    .myCallout code {
-    border-radius: .25rem;
-    background-color: #E2E2E2;
-    }
-    .myCallout + .myCallout {margin-top: 1rem}
-    
-/* ------------------------------------------------------------------------------
- * ------------------------------------------------------------------------------
- */
-
-
 .myHorizontalLine
 {
     margin-top: 3rem;
@@ -181,20 +82,12 @@ h6.myHeading
     border-top: 1px dashed;
     padding: 3px 3px 3px 3px;
 
-    /*     
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem; 
-    */
 }
 
-/* ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----  
- * Image Formating 
- */
 .myImg
 {
     margin-left: auto;
     margin-right: auto;
-    /* display: block; */
     width: 100%;
 
     border-radius: 15px !important;
@@ -202,11 +95,6 @@ h6.myHeading
     cursor: pointer;
     transition: 0.3s;
 }
-/* .myImg:hover
-{
-    opacity: 0.7;
-    border-radius: 15px;
-} */
 
 .myImgContainer
 {
@@ -232,10 +120,9 @@ h6.myHeading
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    padding-top: 56.25%; 
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
 .myResponsiveIframe {
     position: absolute;
     top: 0;
@@ -268,10 +155,9 @@ h6.myHeading
 
 .myAlert
 {
-    /* to remove space above and below */
     margin-top: 0rem;
     margin-bottom: 0rem;
-    /* ------------------------------- */
+
     padding-top: 2%;
     padding-right: 3%;
     padding-bottom: 2%;
@@ -284,7 +170,7 @@ h6.myHeading
 {
     margin-top: 0rem;
     margin-bottom: 1rem;
-    /* ------------------------------- */
+
     padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
@@ -304,7 +190,7 @@ h6.myHeading
 .myTextBlock b
 {
     font-size: 0.9rem;
-    color: var(--colorVeAGreen);
+    color: #00843D;
 }
 
 .myTable li
@@ -314,7 +200,7 @@ h6.myHeading
 
 .myTableHeader
 {
-    background-color: var(--colorVeAGreen);
+    background-color: #00843D;
 }
 
 .myList
